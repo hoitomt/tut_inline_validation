@@ -1,5 +1,5 @@
 Ruby on Rails Inline Validation Tutorial with jQuery
 
-See the overview for this code at <a href="http://wp.me/pA2MU-3d">My Blog</a>
+See the overview for this code at <%= link_to 'My Blog',"http://wp.me/pA2MU-3d" %>
 
 Thank you for reading!
