@@ -1,6 +1,6 @@
 <%= form_for(@person, :validate => true, :html => {:id => 'awesome-form'}) do |f| %>
 
-	<div id="data-entry" class="clearfix">
+	<div id="data-entry">
 		<div id="label"><%= f.label :first_name %></div>
 		<div id="field"><%= f.text_field :first_name %>
 			<div id="person_first_name_helper" class="helper">
@@ -8,8 +8,9 @@
 			</div>
 			<div id="person_first_name_error"></div>
 		</div>
+		<div class="clear">
 	</div>
-	<div id="data-entry" class="clearfix">
+	<div id="data-entry">
 		<div id="label"><%= f.label :last_name %></div>
 		<div id="field"><%= f.text_field :last_name %>
 			<div id="person_last_name_helper" class="helper">
@@ -17,8 +18,10 @@
 			</div>
 			<div id="person_last_name_error"></div>
 		</div>
+		<div class="clear">
 	</div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+	<br />
+	<div>
+		<button class="sign-up" type=submit>Sign Up Free</button>
+	</div>
 <% end %>
